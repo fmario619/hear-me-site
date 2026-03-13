@@ -86,19 +86,22 @@ main {
 }
 
 .music-toggle {
-  margin-top: 32px;
-  width: 48px;
-  height: 48px;
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.05);
   color: #c9a84c;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background 0.2s, border-color 0.2s;
+  z-index: 100;
 }
 
 .music-toggle:hover {
