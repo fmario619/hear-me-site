@@ -158,6 +158,22 @@ main {
   text-decoration: underline;
 }
 
+.support ul {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+.support li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #b0a898;
+  margin-bottom: 8px;
+}
+
+.support li a {
+  color: #c9a84c;
+}
+
 footer {
   text-align: center;
   padding: 24px;
