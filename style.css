@@ -77,6 +77,14 @@ main {
   max-width: 400px;
 }
 
+.hero .platforms {
+  font-size: 14px;
+  color: #7a7068;
+  text-align: center;
+  margin-top: 24px;
+  letter-spacing: 0.3px;
+}
+
 /* Legal pages */
 .legal {
   max-width: 680px;
