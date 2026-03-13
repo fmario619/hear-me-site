@@ -25,46 +25,9 @@
     <p class="description">A guided listening exercise for couples, inspired by the Gottman Method.</p>
     <p class="platforms">Available on the App Store and Google Play</p>
 
-    <audio id="bgMusic" loop preload="auto">
-      <source src="ambient.mp3" type="audio/mpeg">
-    </audio>
   </main>
 
-  <button class="music-toggle" id="musicToggle" aria-label="Toggle music">
-    <span id="musicIcon">&#9654;</span>
-  </button>
-
-  <script>
-    const btn = document.getElementById('musicToggle');
-    const audio = document.getElementById('bgMusic');
-    const icon = document.getElementById('musicIcon');
-    audio.volume = 0.3;
-
-    // Try to autoplay on first user interaction
-    function tryAutoplay() {
-      audio.play().then(function () {
-        icon.textContent = '\u275A\u275A';
-      }).catch(function () {});
-      document.removeEventListener('click', tryAutoplay);
-      document.removeEventListener('touchstart', tryAutoplay);
-      document.removeEventListener('scroll', tryAutoplay);
-    }
-    document.addEventListener('click', tryAutoplay);
-    document.addEventListener('touchstart', tryAutoplay);
-    document.addEventListener('scroll', tryAutoplay);
-
-    btn.addEventListener('click', function (e) {
-      e.stopPropagation();
-      if (audio.paused) {
-        audio.play();
-        icon.textContent = '\u275A\u275A';
-      } else {
-        audio.pause();
-        icon.textContent = '\u25B6';
-      }
-    });
-  </script>
-
+  <script src="music.js"></script>
   <footer>
     <p>&copy; 2026 RheumWorld LLC</p>
   </footer>
